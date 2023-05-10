@@ -1,0 +1,108 @@
+header{
+    padding: 36px 160px;
+    .header_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header_logo{
+            h1{
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 45px;
+                a{
+                    color: #91916C;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+        label, input{
+            display: none;
+        }
+        #check:checked ~ nav{
+            transform: translate(0%);
+
+        }
+        nav{
+            transition: all 0.2s;
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 76px;
+                li{
+                    a{
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+                        font-family: 'Nunito Sans', sans-serif;
+                        color: #000000;
+                        opacity: 0.8;
+                        transition: all 0.2s;
+                        &:hover{
+                            opacity: 1;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1241px){
+    header{
+        padding: 30px;
+    }
+}
+
+@media(max-width: 1000px){
+    header{
+        // padding: 20px;
+        .header_main{
+            nav{
+                ul{
+                    gap: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    header{
+        .header_main{
+            label{
+                display: block;
+            }
+            nav{
+                z-index: 10000;
+                position: absolute;
+                left: 0;
+                right: 0;
+                background-color: white;
+                height: calc(100vh - 88px);
+                top: 88px;
+                transform: translate(-100%);
+                ul{
+                    gap: 30px;
+                    flex-direction: column;
+
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 500px){
+    header{
+        // padding: 20px;
+        .header_main{
+            .header_logo{
+                h1{
+                    font-size: 27px;
+
+                }
+            }
+        }
+    }
+}

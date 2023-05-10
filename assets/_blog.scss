@@ -1,0 +1,167 @@
+.blog{
+    margin-top: 64px;
+    padding-top: 73px;
+    background-color: #FFEFE7;
+    .blog_main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 139%;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #91916C;
+            margin-bottom: 76px;
+            position: relative;
+            &::after{
+                content: ' ';
+                width: 288px;
+                height: 0px;
+                border: 3px solid #91916C;
+                position: absolute;
+                top: 120%;
+                left: -92%;
+            }
+            
+        }
+        h1{
+            margin-bottom: 85px;
+            font-family: 'Playfair Display' serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 139%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #795744;
+            
+        }
+        .blog_cards{
+            display: grid;
+            grid-template-areas: 'card1 card2 card3'
+                                 'card4 card5 card6';
+            gap: 55px;
+            .blog_card{
+                display: flex;
+                gap: 32px;
+                align-items: center;
+                padding-bottom: 80px;
+                &:nth-of-type(1){
+                    grid-area: card1;
+                }
+                &:nth-of-type(2){
+                    grid-area: card2;
+                }
+                &:nth-of-type(3){
+                    grid-area: card3;
+                }
+                &:nth-of-type(4){
+                    grid-area: card4;
+                }
+                &:nth-of-type(5){
+                    grid-area: card5;
+                }
+                &:nth-of-type(6){
+                    grid-area: card6;
+                }
+                p{
+                    font-family: 'Nunito Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 171.5%;
+                    /* or 34px */
+                    
+                    letter-spacing: 0.02em;
+                    
+                    color: #333333;
+                    
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:1238px){
+    .blog{
+        .blog_main{
+            .blog_cards{
+                grid-template-areas: 'card1 card2 '
+                                    'card3 card4'
+                                    'card5 card6';  
+            }
+        }
+    }
+}
+
+@media(max-width:860px){
+    .blog{
+        .blog_main{
+            .blog_cards{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 547px){
+    .blog{
+        .blog_main{
+            h1{
+                font-size: 38px;
+
+            }
+            h2{
+                font-size: 26px;
+                &::after{
+                    content: ' ';
+                    width: 233px;
+                    
+                }
+            }
+            .blog_cards{
+                .blog_card{
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 452px){
+    .blog{
+        .blog_main{
+            h1{
+                font-size: 32px;
+
+            }
+            h2{
+                font-size: 23px;
+                &::after{
+                    content: ' ';
+                    width: 200px;
+                    
+                }
+            }
+            .blog_cards{
+                .blog_card{
+                    gap: 20px;
+                    p{
+                        font-size: 14px;
+                    }
+                    img{
+                        width: 110px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.showcase{
+    margin-top: 30px;
+    .showcase_main{
+        display: flex;
+        gap: 96px;
+        padding-right: 20px;
+        .showcase_text{
+            margin-top: 120px;
+            padding: 0 20px;    
+            h1{
+                font-family: 'Playfair Display', serif;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 139%;
+                letter-spacing: 0.02em;
+                color: #E5A985;
+                margin-bottom: 39px;
+                
+            }
+            p{
+                font-family: 'Nunito Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 171%;
+                letter-spacing: 0.02em;
+                color: #4A4747;
+                margin-bottom: 67px;
+                
+            }
+            form{
+                input{
+                    width: 465px;
+                    height: 58px;
+                    background: #E5E5E5;
+                    border-radius: 8px 0px 0px 8px;
+                    font-family: 'Nunito Sans' sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 135.5%;
+                    padding: 15px 30px;                    
+                    outline: none;
+                    border: 0;
+                    color: #C4C4C4;
+                    
+                }
+                button{
+                    width: 160px;
+                    height: 58px;
+                    background: #91916C;
+                    border-radius: 0px 8px 8px 0px;
+                    font-family: 'Nunito Sans'sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 135.5%;
+                    border: 0;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1124px){
+    .showcase{
+        .showcase_main{
+            gap: 20px;
+        }
+    }
+}
+
+@media(max-width:1060px){
+    .showcase{
+        .showcase_main{
+            .showcase_text{
+                h1{
+                    font-size: 45px;
+                    font-weight: 500;
+                    line-height: 110%;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 131%;  
+                }
+                form{
+                    input{
+                        width: 100%;
+                        border-radius: 0;
+                        font-size: 18px;
+                        font-weight: 400;
+
+                    }
+                    button{
+                        border-radius: 0;
+                        font-size: 18px;
+                        font-weight: 400;
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 832px){
+    .showcase{
+        .showcase_main{
+            position: relative;
+            // flex-direction: column;
+            // align-items: center;
+            padding: 0;
+            img{
+                // width: 657px;
+                height: 686px;
+                // position: absolute;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .showcase_text{
+                position: absolute;
+                text-align: center;
+                left: 0;
+                right: 0;
+                form{
+                    input{
+                        width: 465px;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width: 520px){
+    .showcase{
+        .showcase_main{
+            img{
+                height: 686px;
+            }
+            .showcase_text{
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                form{
+                    
+                    input{
+                        width: 100%;
+                        margin-bottom: 20px;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
